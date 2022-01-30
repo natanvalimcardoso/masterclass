@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:masterclass/aula-2/login_bank.dart';
 import 'package:masterclass/aula-2/login_tinder.dart';
 
 class MyApp extends StatelessWidget {
@@ -6,6 +7,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: LoginTinder());
+    return const MaterialApp(home: LoginBank(),
+    debugShowCheckedModeBanner: false,
+    );
   }
 }
