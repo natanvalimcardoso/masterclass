@@ -61,6 +61,11 @@ flutter:
   assets:
     - assets/images/logo_seam.png
     - assets/images/google.png
+    - assets/images/tinder.png
+    - assets/images/back.png
+    - assets/images/apple.png
+    - assets/images/facebook_white.png
+    - assets/images/chat.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
