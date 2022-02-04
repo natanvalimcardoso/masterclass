@@ -167,7 +167,7 @@ class ButtonSocialMedia extends StatelessWidget {
           },
           child: Ink(
             height: 60,
-            width: 350,
+            width: MediaQuery.of(context).size.width * 0.8,
             decoration: BoxDecoration(
               color: Colors.transparent,
               borderRadius: BorderRadius.circular(40),

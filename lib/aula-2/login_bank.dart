@@ -71,7 +71,7 @@ class LoginBank extends StatelessWidget {
               ),
               Container(
                 height: 40,
-                width: 380,
+                width: 380,// botar ,mediaquerry
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
