@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 var selecionado = true;
 
-class AnimacaoImplicita extends StatefulWidget {
-  const AnimacaoImplicita({Key? key}) : super(key: key);
+class AnimacaoImplicitaLoading extends StatefulWidget {
+  const AnimacaoImplicitaLoading({Key? key}) : super(key: key);
 
   @override
-  State<AnimacaoImplicita> createState() => _AnimacaoImplicitaState();
+  State<AnimacaoImplicitaLoading> createState() => _AnimacaoImplicitaLoadingState();
 }
 
-class _AnimacaoImplicitaState extends State<AnimacaoImplicita> {
+class _AnimacaoImplicitaLoadingState extends State<AnimacaoImplicitaLoading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +32,7 @@ class _AnimacaoImplicitaState extends State<AnimacaoImplicita> {
             height: 50,
             width: selecionado ? 50 : 100,
             decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.red,
                 borderRadius: selecionado
                     ? BorderRadius.circular(50)
                     : BorderRadius.circular(0)),

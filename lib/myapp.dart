@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:masterclass/aula-3-anima%C3%A7%C3%B5es/animacao_implicita.dart';
+import 'aula-3-animações/animacao_implicita_loading.dart';
+
 
 
 
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: AnimacaoImplicita(),
+    return const MaterialApp(home: AnimacaoImplicitaLoading(),
     debugShowCheckedModeBanner: false,
     );
   }
