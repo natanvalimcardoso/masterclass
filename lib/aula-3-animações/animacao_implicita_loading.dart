@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 var selecionado = true;
-
+//
 class AnimacaoImplicitaLoading extends StatefulWidget {
   const AnimacaoImplicitaLoading({Key? key}) : super(key: key);
 
