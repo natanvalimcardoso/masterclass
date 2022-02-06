@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 var selecionado = true;
-//
+
 class AnimacaoImplicitaLoading extends StatefulWidget {
   const AnimacaoImplicitaLoading({Key? key}) : super(key: key);
 
@@ -16,28 +16,28 @@ class _AnimacaoImplicitaLoadingState extends State<AnimacaoImplicitaLoading> {
       appBar: AppBar(
         title: const Text('Animacao Implicita'),
       ),
-      body: GestureDetector(
-        onTap: () {
-          setState(() {
-            selecionado = !selecionado;
-          });
-        },
-        child: AnimatedAlign(
-          alignment: selecionado ? Alignment.bottomRight : Alignment.topCenter,
-          duration: const Duration(seconds: 1),
-          curve: Curves.easeInQuart,
-          child: AnimatedContainer(
-            duration: const Duration(seconds: 1),
-            margin: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
-            height: 50,
-            width: selecionado ? 50 : 100,
-            decoration: BoxDecoration(
-                color: Colors.red,
-                borderRadius: selecionado
-                    ? BorderRadius.circular(50)
-                    : BorderRadius.circular(0)),
+      body: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.5,
+            width: double.infinity,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                AnimatedContainer(
+                  duration: const Duration(seconds: 1),
+                  width: 300,
+                  height: 30,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

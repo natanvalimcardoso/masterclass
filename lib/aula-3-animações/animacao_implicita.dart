@@ -24,8 +24,8 @@ class _AnimacaoImplicitaState extends State<AnimacaoImplicita> {
         },
         child: AnimatedAlign(
           alignment: selecionado ? Alignment.bottomRight : Alignment.topCenter,
-          duration: const Duration(seconds: 1),
-          curve: Curves.easeInQuart,
+          duration: const Duration(seconds: 2),
+          curve: Curves.elasticInOut,
           child: AnimatedContainer(
             duration: const Duration(seconds: 1),
             margin: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
