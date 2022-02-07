@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:masterclass/aula-3-anima%C3%A7%C3%B5es/animacao_implicita.dart';
 import 'package:masterclass/home_page.dart';
+
+import 'aula-2-espaços/login_bank.dart';
+import 'aula-2-espaços/login_tinder.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -10,6 +14,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) =>  HomePage(),
+        '/animacacaoImplicita': (context) =>  AnimacaoImplicita(),
+        '/loginTinder': (context) =>  LoginTinder(),
+        '/loginBank': (context) =>  LoginBank(),
       },
       debugShowCheckedModeBanner: false,
     );
