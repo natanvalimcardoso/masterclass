@@ -1,12 +1,15 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
-var selecionado = true;
+double selecionado = 0.0;
 
 class AnimacaoImplicitaLoading extends StatefulWidget {
   const AnimacaoImplicitaLoading({Key? key}) : super(key: key);
 
   @override
-  State<AnimacaoImplicitaLoading> createState() => _AnimacaoImplicitaLoadingState();
+  State<AnimacaoImplicitaLoading> createState() =>
+      _AnimacaoImplicitaLoadingState();
 }
 
 class _AnimacaoImplicitaLoadingState extends State<AnimacaoImplicitaLoading> {
@@ -25,18 +28,58 @@ class _AnimacaoImplicitaLoadingState extends State<AnimacaoImplicitaLoading> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                AnimatedContainer(
-                  duration: const Duration(seconds: 1),
-                  width: 300,
+                Container(
+                  width: 319,
                   height: 30,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(50),
+                    borderRadius: BorderRadius.circular(15),
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 2,
+
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      AnimatedContainer(
+                        duration: const Duration(seconds: 1),
+                        width: MediaQuery.of(context).size.width * selecionado,
+                        height: 30,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Color.fromARGB(255, 3, 100, 255),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
             ),
           ),
+          ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  if (selecionado <= 0.7) {
+                    print(selecionado);
+                    selecionado += 0.1;
+                  }
+                });
+              },
+              child: const Text(
+                'Subir',
+              )),
+          ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  if (selecionado >= 0.1) {
+                    selecionado -= 0.1;
+                    print(selecionado);
+                  }
+                });
+              },
+              child: const Text(
+                'Descer',
+              ))
         ],
       ),
     );
