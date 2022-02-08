@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:masterclass/aula-3-anima%C3%A7%C3%B5es/animacao_explicita.dart';
 import 'package:masterclass/aula-3-anima%C3%A7%C3%B5es/animacao_implicita.dart';
 import 'package:masterclass/home_page.dart';
 
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/': (context) =>  HomePage(),
-        '/animacacaoImplicita': (context) =>  AnimacaoImplicita(),
-        '/loginTinder': (context) =>  LoginTinder(),
-        '/loginBank': (context) =>  LoginBank(),
+        '/': (context) => HomePage(),
+        '/animacacaoImplicita': (context) => AnimacaoImplicita(),
+        '/loginTinder': (context) => LoginTinder(),
+        '/loginBank': (context) => LoginBank(),
+        '/animacaoImplicita': (context) => AnimacaoExplicita(),
       },
       debugShowCheckedModeBanner: false,
     );

@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.7,
+                height: MediaQuery.of(context).size.height * 0.6,
                 child: SingleChildScrollView(
                     child: Column(
                   children: const [
@@ -53,7 +53,7 @@ class HomePage extends StatelessWidget {
                 )),
               ),
               Container(
-                height: MediaQuery.of(context).size.height * 0.1,
+                height: MediaQuery.of(context).size.height * 0.18,
                 width: MediaQuery.of(context).size.width * 0.5,
                 color: Color.fromARGB(255, 8, 210, 213),
               )
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * 0.7,
+                height: MediaQuery.of(context).size.height * 0.6,
                 child: SingleChildScrollView(
                   child: Column(
                     children: const [
@@ -89,12 +89,16 @@ class HomePage extends StatelessWidget {
                           text: 'Aula 2 - Login Tinder',
                           color: Colors.blue,
                           route: '/loginTinder'),
+                      Button(
+                          text: 'Aula 3 - Ani Controlada',
+                          color: Colors.blue,
+                          route: '/animacaoImplicita'),
                     ],
                   ),
                 ),
               ),
               Container(
-                height: MediaQuery.of(context).size.height * 0.1,
+                height: MediaQuery.of(context).size.height * 0.18,
                 width: MediaQuery.of(context).size.width * 0.5,
                 color: Color.fromARGB(255, 124, 5, 139),
               )
