@@ -15,7 +15,7 @@ class AnimacaoImplicitaLoading extends StatefulWidget {
 class _AnimacaoImplicitaLoadingState extends State<AnimacaoImplicitaLoading> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(   
       appBar: AppBar(
         title: const Text('Animacao Implicita'),
       ),
