@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 
-class ScrollCorrect extends StatelessWidget {
-  const ScrollCorrect({Key? key}) : super(key: key);
+class ScrollAlign extends StatelessWidget {
+  const ScrollAlign({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

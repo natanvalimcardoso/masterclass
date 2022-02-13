@@ -52,9 +52,8 @@ class HomePage extends StatelessWidget {
                     Button(
                       text: 'Aula 4 - ListView',
                       color: Colors.blue,
-                      route: '/scrollCorrect',
+                      route: '/scrollAlign',
                     ),
-                    
                   ],
                 )),
               ),

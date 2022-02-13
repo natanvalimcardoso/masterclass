@@ -5,7 +5,7 @@ import 'package:masterclass/home_page.dart';
 
 import 'aula-2-espaços/login_bank.dart';
 import 'aula-2-espaços/login_tinder.dart';
-import 'aula-4-miscelanea/scrollCorrect.dart';
+import 'aula-4-miscelanea/scrollAlign.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         '/loginTinder': (context) => LoginTinder(),
         '/loginBank': (context) => LoginBank(),
         '/animacaoImplicita': (context) => AnimacaoExplicita(),
-        '/scrollCorrect': (context) => ScrollCorrect(),
+        '/scrollAlign': (context) => ScrollAlign(),
       },
       debugShowCheckedModeBanner: false,
     );
