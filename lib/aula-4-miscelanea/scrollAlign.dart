@@ -29,25 +29,25 @@ class ScrollAlign extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 children: [
                   Container(
-                  margin: EdgeInsets.only(right: 10),
-                  width: 150,
-                  color: Color.fromARGB(255, 255, 9, 9),
-                ),
-                Container(
-                  margin: EdgeInsets.only(right: 10),
-                  width: 150,
-                  color: Color.fromARGB(255, 104, 33, 33),
-                ),
-                Container(
-                  margin: EdgeInsets.only(right: 10),
-                  width: 150,
-                  color: Color.fromARGB(255, 9, 255, 9),
-                ),
-                Container(
-                  margin: EdgeInsets.only(right: 10),
-                  width: 150,
-                  color: Color.fromARGB(255, 21, 66, 133),
-                ),
+                    margin: EdgeInsets.only(right: 10),
+                    width: 150,
+                    color: Color.fromARGB(255, 255, 9, 9),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 10),
+                    width: 150,
+                    color: Color.fromARGB(255, 104, 33, 33),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 10),
+                    width: 150,
+                    color: Color.fromARGB(255, 9, 255, 9),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 10),
+                    width: 150,
+                    color: Color.fromARGB(255, 21, 66, 133),
+                  ),
                 ],
               ),
             ),
