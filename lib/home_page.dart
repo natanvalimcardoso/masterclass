@@ -49,6 +49,11 @@ class HomePage extends StatelessWidget {
                       color: Colors.blue,
                       route: '/animacacaoImplicita',
                     ),
+                    Button(
+                      text: 'Aula 4 - ListView',
+                      color: Colors.blue,
+                      route: '/scrollCorrect',
+                    ),
                     
                   ],
                 )),
@@ -60,6 +65,8 @@ class HomePage extends StatelessWidget {
               )
             ],
           ),
+
+          /////////////////////////// HARD
           Column(
             children: [
               Container(
