@@ -100,6 +100,10 @@ class HomePage extends StatelessWidget {
                           text: 'Aula 3 - Ani Controlada',
                           color: Colors.blue,
                           route: '/animacaoImplicita'),
+                      Button(
+                          text: 'Aula 4 - ScrollBuilder',
+                          color: Colors.blue,
+                          route: '/scrollBuilder'),
                     ],
                   ),
                 ),
