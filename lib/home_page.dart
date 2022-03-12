@@ -54,6 +54,11 @@ class HomePage extends StatelessWidget {
                       color: Colors.blue,
                       route: '/scrollAlign',
                     ),
+                    Button(
+                      text: 'Aula 4 - Rotas',
+                      color: Colors.blue,
+                      route: '/rotaum',
+                    ),
                   ],
                 )),
               ),
